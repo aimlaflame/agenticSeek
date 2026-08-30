@@ -55,7 +55,8 @@ setup(
         "sentencepiece>=0.2.0",
         "openai",
         "sniffio",
-        "tqdm>4"
+        "tqdm>4",
+        "click>=8.1.0",
     ],
     extras_require={
         "chinese": [
@@ -67,7 +68,7 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            "agenticseek=main:main",
+            "agenticseek=cli:agenticseek",
         ],
     },
     classifiers=[
